@@ -1,0 +1,11 @@
+FROM openjdk:latest
+
+WORKDIR /app
+
+COPY . .
+
+# EXPOSE 4000
+
+RUN javac Hello.java
+
+CMD ["java", "Hello"]
